@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="No_Game_No_Life">
+  <ClassDiagramComponents>
+    <Class name="Escenario" package="no_game_no_life" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="Cuestion" type="String[]" visibility="protected"/>
+        <Field name="decision" type="String[]" visibility="protected"/>
+        <Field name="seleccioner" type="int" visibility="protected"/>
+        <Field name="decision2" type="String[]" visibility="protected"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="EscenaCasa" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="No_Game_No_Life" package="no_game_no_life" visibility="public" xPosition="178.0" yPosition="253.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Opciones" package="no_game_no_life" visibility="public" xPosition="394.0" yPosition="1.0">
+      <Fields>
+        <Field name="yesOrnO" type="String[]" visibility="private"/>
+        <Field name="atributosPerso" type="int" visibility="protected"/>
+        <Field name="inteligencia" type="int" visibility="protected"/>
+        <Field name="fuerza" type="int" visibility="protected"/>
+        <Field name="pereza" type="int" visibility="protected"/>
+        <Field name="haSocial" type="int" visibility="protected"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="mostrarOpciones" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="no_game_no_life.Escenario" target="no_game_no_life.Opciones"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
